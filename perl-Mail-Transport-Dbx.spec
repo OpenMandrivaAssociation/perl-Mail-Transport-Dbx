@@ -10,7 +10,6 @@ Source:		http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{real_name}-%{ve
 URL:		http://search.cpan.org/dist/Mail-Transport-Dbx/
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Pod-Coverage
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Mail::Transport::Dbx is a wrapper around libdbx to read Outlook Express
