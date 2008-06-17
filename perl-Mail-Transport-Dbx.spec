@@ -3,7 +3,7 @@
 Summary:	CPAN %{real_name} perl module
 Name:		perl-%{real_name}
 Version:	0.07
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL or Artistic
 Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{real_name}-%{version}.tar.bz2
