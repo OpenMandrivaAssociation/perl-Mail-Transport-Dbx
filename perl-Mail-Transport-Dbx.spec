@@ -1,23 +1,26 @@
-%define	real_name Mail-Transport-Dbx
+%define	upstream_name    Mail-Transport-Dbx
+%define	upstream_version 0.07
 
-Summary:	CPAN %{real_name} perl module
-Name:		perl-%{real_name}
-Version:	0.07
-Release:	%mkrel 6
-License:	GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	CPAN %{upstream_name} perl module
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{real_name}-%{version}.tar.bz2
-URL:		http://search.cpan.org/dist/Mail-Transport-Dbx/
+Url:		http://search.cpan.org/dist/Mail-Transport-Dbx/
+Source0:	http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Pod-Coverage
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Mail::Transport::Dbx is a wrapper around libdbx to read Outlook Express
 mailboxes (more commonly known as .dbx files).
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -37,5 +40,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*/*
 %{perl_vendorlib}/*/Mail/Transport
 %{perl_vendorlib}/*/auto/Mail/Transport
-
-
