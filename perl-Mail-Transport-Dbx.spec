@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Mail-Transport-Dbx/
 Source0:	http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{modname}-%{modver}.tar.bz2
+BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Pod-Coverage
 
