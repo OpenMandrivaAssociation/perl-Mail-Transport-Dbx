@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	19
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/Mail-Transport-Dbx/
+Url:		https://search.cpan.org/dist/Mail-Transport-Dbx/
 Source0:	http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/%{modname}-%{modver}.tar.bz2
 BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
